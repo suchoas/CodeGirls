@@ -1,0 +1,19 @@
+Este repositório foi desenvolvido como parte do desafio AWS Step Functions da DIO, com o objetivo de consolidar o aprendizado sobre automação e orquestração de serviços na nuvem. O AWS Step Functions é uma ferramenta que permite integrar e coordenar diversos recursos da AWS, como Lambda, S3, SNS, SQS e DynamoDB, facilitando a criação de fluxos de trabalho visuais, automatizados e com pouco código.
+
+Durante o desafio, aprofundei o entendimento sobre como os workflows são estruturados por meio de máquinas de estados, que definem as etapas e decisões dentro de um processo. Essa abordagem simplifica o desenvolvimento de soluções complexas, tornando-as mais organizadas, escaláveis e fáceis de monitorar.
+
+A atividade também reforçou conceitos importantes de mensageria e boas práticas de arquitetura em nuvem, mostrando como o Step Functions pode ser utilizado para validar arquivos, acionar funções Lambda, coordenar integrações entre serviços e acompanhar execuções em tempo real.
+
+De modo geral, este desafio proporcionou uma visão clara de como o Step Functions se encaixa em um ambiente de computação serverless, ajudando a automatizar processos e reduzir a complexidade do código, ao mesmo tempo em que melhora a visibilidade e a confiabilidade das aplicações em nuvem.
+
+Entre os principais benefícios do Step Functions estão a automação com pouco código, o monitoramento visual das execuções, a escalabilidade, a confiabilidade e a integração nativa com diversos serviços AWS. Esses recursos tornam o desenvolvimento de aplicações mais ágil e seguro, reduzindo falhas e facilitando o acompanhamento de cada etapa.
+
+Alguns aprendizados e insights: 
+Durante o desafio, aprofundei o entendimento sobre como o Step Functions facilita a automação e orquestração de tarefas na nuvem.
+
+Principais pontos aprendidos:
+
+- O Step Functions reduz a complexidade de aplicações serverless com múltiplas dependências.
+- É possível visualizar e rastrear execuções com clareza, o que melhora o monitoramento e o debug.
+- Os workflows declarativos tornam a arquitetura mais previsível e fácil de manter.
+- O serviço é ideal para processos que envolvem validação, mensageria e coordenação entre serviços.
