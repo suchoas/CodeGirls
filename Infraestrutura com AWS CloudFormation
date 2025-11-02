@@ -1,0 +1,19 @@
+O AWS CloudFormation é basicamente uma forma de "desenhar" sua infraestrutura da AWS em um arquivo de texto. Em vez de criar tudo manualmente (como instâncias EC2 ou bancos de dados), você escreve o que precisa em um template.
+
+Você pode escrever esse template em JSON (o formato original) ou YAML (que é mais fácil de ler).
+
+Depois, você entrega esse arquivo para o CloudFormation e ele constrói tudo sozinho, criando o que é chamado de Stack.
+
+As maiores vantagens são:
+
+Automação: É muito mais rápido e confiável do que fazer na mão.
+
+Consistência: Garante que seu ambiente de produção seja exatamente igual ao de teste.
+
+Reaproveitamento: Você pode usar o mesmo template para criar a mesma infraestrutura várias vezes, economizando muito tempo.
+
+Segurança: As regras de segurança já são definidas no próprio código.
+
+É o que chamam de "Infraestrutura como Código" (IaC). Você passa a tratar sua infraestrutura como se fosse o código da sua aplicação.
+
+Este desafio prático solidificou a compreensão do conceito de Infraestrutura como Código (IaC). A capacidade de tratar a infraestrutura como código — permitindo que ela seja versionada, revisada por pares e integrada a pipelines de CI/CD — representa uma mudança fundamental na gestão de ambientes em nuvem. O CloudFormation se revela uma ferramenta robusta para implementar essas práticas de DevOps de forma eficaz na AWS.
