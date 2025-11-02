@@ -1,0 +1,25 @@
+Serviços Centrais Analisados:
+
+Amazon S3 (Simple Storage Service): Um serviço de armazenamento de objetos altamente escalável, seguro e durável. Foi utilizado como data lake e ponto de entrada para o fluxo de dados, armazenando os arquivos brutos para processamento.
+
+AWS Lambda: Um serviço de computação serverless que executa código em resposta a eventos. No projeto, o Lambda foi configurado para ser o compute layer, processando os dados sem a necessidade de provisionar ou gerenciar servidores, escalando automaticamente e operando sob um modelo de custo baseado em execução.
+
+Descrição da Arquitetura Implementada (Hands-On):
+
+O fluxo de automação construído neste laboratório seguiu as seguintes etapas:
+
+Ingestão: Um usuário realiza o upload de um arquivo de dados (ex: CSV ou JSON) em um bucket Amazon S3 pré-configurado.
+
+Gatilho (Trigger): O evento de criação de objeto no S3 (s3:ObjectCreated:*) aciona automaticamente a função AWS Lambda.
+
+Processamento: A função Lambda, escrita em Python, é executada, acessa o objeto recém-criado, lê seu conteúdo e realiza o processamento (extração e transformação) dos dados.
+
+Armazenamento: Os dados processados são então persistidos em uma tabela no Amazon DynamoDB, um banco de dados NoSQL gerenciado.
+
+Desenvolvimento e Teste com LocalStack:
+
+Foi introduzido o conceito de LocalStack, um emulador de serviços da AWS de código aberto. Esta ferramenta permite o desenvolvimento e teste de aplicações cloud-native localmente, simulando serviços como S3, Lambda e DynamoDB. A utilização do LocalStack é fundamental para otimizar o ciclo de desenvolvimento (CI/CD) e reduzir custos, permitindo a validação da lógica da aplicação sem interagir com a infraestrutura real da AWS.
+
+Conclusão:
+
+Este desafio demonstrou a eficiência da combinação S3 e Lambda para a construção de pipelines de processamento de dados e back-ends serverless. A arquitetura orientada a eventos resultante é robusta, escalável e custo-eficiente, permitindo o desenvolvimento de soluções complexas com baixa sobrecarga operacional.
