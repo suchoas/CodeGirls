@@ -1,0 +1,6 @@
+Este repositório documenta a prática com AWS CloudFormation do desafio da DIO. O CloudFormation é o serviço de Infraestrutura como Código (IaC) da AWS, que nos permite automatizar a criação de recursos usando templates em JSON ou YAML.
+
+O processo envolve escrever um template que define os recursos (como EC2, S3, etc.) e enviá-lo ao CloudFormation, que provisiona uma Stack (o conjunto de recursos) baseada nesse modelo. Isso permite versionar, padronizar e replicar ambientes de forma eficiente.
+
+Na prática, analisamos um template para criar buckets S3, aprendendo sobre diretivas importantes como DeletionPolicy: "Retain", que protege contra a exclusão acidental de dados ao deletar a stack, e LifecycleConfiguration, para gerenciar o ciclo de vida dos arquivos automaticamente.
+Este desafio prático foi fundamental para solidificar os conceitos de Infraestrutura como Código. A capacidade de criar desde um simples recurso (como um S3) até uma arquitetura robusta e complexa (com EC2, VPCs, Firewalls, etc.) a partir de um único arquivo é transformadora.
